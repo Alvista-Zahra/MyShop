@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/outline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/cartFragment2"
+        android:icon="@drawable/outline_add_shopping_cart_24"
+        android:title="Keranjang"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/outline_frame_person_24"
+        android:title="Profile"/>
+</menu>
