@@ -24,7 +24,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@android:drawable/ic_menu_gallery"
+                android:src="@drawable/baseline_ad_units_24"
                 android:contentDescription="Product Image" />
 
             <LinearLayout
@@ -47,7 +47,7 @@
                     android:id="@+id/txtProductPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp 500.000"
+                    android:text="Rp 5 000.000"
                     android:textSize="14sp"
                     android:layout_marginTop="4dp"
                     android:textColor="@android:color/holo_green_dark" />
@@ -127,7 +127,7 @@
                 android:id="@+id/txtTotalPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 500.000"
+                android:text="Rp 5 000.000"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/holo_red_dark" />

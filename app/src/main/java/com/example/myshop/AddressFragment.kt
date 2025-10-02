@@ -35,13 +35,15 @@ class AddressFragment : Fragment() {
             adapterProvinces.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinnerProvinces.adapter = adapterProvinces
 
-            // kirim data provinsi yang dipilih kembali ke CheckoutFragment
             btnDone.setOnClickListener {
                 findNavController().apply {
                     previousBackStackEntry
                         ?.savedStateHandle
                         ?.set("address", spinnerProvinces.selectedItem.toString())
                 }.navigateUp()
+            }
+            btnDone.setOnClickListener {
+                findNavController().navigate(R.id.action_addressFragment_to_cartFragment)
             }
         }
     }

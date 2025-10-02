@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myshop.databinding.FragmentCartBinding
 
@@ -36,10 +37,10 @@ class CartFragment : Fragment() {
                 Toast.makeText(requireContext(), "Keranjang belanja kosong", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(requireContext(), "Lanjut ke pembayaran", Toast.LENGTH_SHORT).show()
-                // Navigasi ke halaman pembayaran jika ada
-                // findNavController().navigate(R.id.action_cartFragment_to_checkoutFragment)
+                findNavController().navigate(R.id.homeFragment)
             }
         }
+
     }
 
     private fun setupRecyclerView() {
@@ -55,14 +56,10 @@ class CartFragment : Fragment() {
     }
 
     private fun loadCartItems() {
-        // Data dummy untuk contoh
-        // Ganti dengan data dari database atau repository
         cartItems.clear()
         cartItems.addAll(
             listOf(
-                CartItem(1, "Laptop Gaming", 15000000, 1, "https://example.com/laptop.jpg"),
-                CartItem(2, "Mouse Wireless", 250000, 2, "https://example.com/mouse.jpg"),
-                CartItem(3, "Keyboard Mechanical", 750000, 1, "https://example.com/keyboard.jpg")
+                CartItem(1, "Samsung M22", 5000000, 1, "https://example.com/laptop.jpg")
             )
         )
         cartAdapter.notifyDataSetChanged()
