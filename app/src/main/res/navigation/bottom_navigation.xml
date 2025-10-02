@@ -32,7 +32,8 @@
         tools:layout="@layout/fragment_checkout">
         <argument
             android:name="productName"
-            app:argType="string" />
+            app:argType="string"
+            app:nullable="true" />
         <action
             android:id="@+id/action_checkoutFragment_to_addressFragment3"
             app:destination="@id/addressFragment" />
