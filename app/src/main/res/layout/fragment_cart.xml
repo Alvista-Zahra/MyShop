@@ -46,7 +46,7 @@
             android:id="@+id/txtProductPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rp 3.500.000"
+            android:text="Rp 5 000.000"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"/>
